@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- ========================================
+         DOCUMENT METADATA
+    ======================================== -->
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Fresh, organic groceries sourced with care and delivered to your doorstep."
+    >
+
+    <meta
+        name="theme-color"
+        content="#244b36"
+    >
+
+    <title>Organic Grocery Store | Fresh Food, Thoughtfully Sourced</title>
+
+
+    <!-- ========================================
+         STYLESHEETS
+    ======================================== -->
+
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+
+    <!-- ========================================
+         FAVICON
+    ======================================== -->
+
+    <link
+        rel="icon"
+        href="favicon.ico"
+        type="image/x-icon"
+    >
+
+</head>
+
+
+<body>
+
+    <!-- ========================================
+         HEADER / NAVIGATION
+    ======================================== -->
+
+    <header class="site-header">
+
+        <nav
+            class="navbar container"
+            aria-label="Main navigation"
+        >
+
+            <a
+                href="index.html"
+                class="logo"
+                aria-label="Organic Grocery Store home"
+            >
+                Organic
+            </a>
+
+
+            <button
+                class="menu-toggle"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="primary-navigation"
+            >
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </button>
+
+
+            <ul
+                class="nav-links"
+                id="primary-navigation"
+            >
+
+                <li>
+                    <a
+                        href="pages/shop.html"
+                        class="nav-link"
+                    >
+                        Shop
+                    </a>
+                </li>
+
+                <li>
+                    <a
+                        href="#categories"
+                        class="nav-link"
+                    >
+                        Categories
+                    </a>
+                </li>
+
+                <li>
+                    <a
+                        href="#about"
+                        class="nav-link"
+                    >
+                        Our Story
+                    </a>
+                </li>
+
+                <li>
+                    <a
+                        href="pages/contact.html"
+                        class="nav-link"
+                    >
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+
+            <div
+                class="nav-actions"
+                aria-label="Shopping and account links"
+            >
+
+                <a
+                    href="pages/login.html"
+                    class="nav-action"
+                    aria-label="Account"
+                >
+                    Account
+                </a>
+
+                <a
+                    href="pages/wishlist.html"
+                    class="nav-action"
+                    aria-label="Wishlist"
+                >
+                    Wishlist
+                </a>
+
+                <a
+                    href="pages/cart.html"
+                    class="nav-action"
+                    aria-label="Shopping cart"
+                >
+                    Cart
+                </a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ========================================
+         MAIN CONTENT
+    ======================================== -->
+
+    <main id="main-content">
+
+
+        <!-- ====================================
+             HERO
+        ==================================== -->
+
+        <section
+            class="hero section"
+            aria-labelledby="hero-title"
+        >
+
+            <div class="container hero-content">
+
+                <div class="hero-copy">
+
+                    <span class="eyebrow">
+                        Organic. Fresh. Thoughtful.
+                    </span>
+
+                    <h1 id="hero-title">
+                        Good food,
+                        <span class="text-primary">
+                            naturally.
+                        </span>
+                    </h1>
+
+                    <p class="hero-description">
+                        Fresh organic groceries, thoughtfully
+                        sourced from people who care about
+                        what they grow.
+                    </p>
+
+                    <div class="hero-actions">
+
+                        <a
+                            href="pages/shop.html"
+                            class="btn btn-primary"
+                        >
+                            Shop Fresh
+                        </a>
+
+                        <a
+                            href="#categories"
+                            class="btn btn-outline"
+                        >
+                            Explore Categories
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="hero-media">
+
+                    <img
+                        src="assets/images/banners/hero.jpg"
+                        alt="Fresh organic vegetables arranged on a table"
+                        fetchpriority="high"
+                    >
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ====================================
+             SHOP BY CATEGORY
+        ==================================== -->
+
+        <section
+            class="section categories-section"
+            id="categories"
+            aria-labelledby="categories-title"
+        >
+
+            <div class="container">
+
+                <div class="section-header">
+
+                    <span class="eyebrow">
+                        Explore our selection
+                    </span>
+
+                    <h2
+                        class="section-title"
+                        id="categories-title"
+                    >
+                        Shop by category
+                    </h2>
+
+                    <p class="section-description">
+                        From farm-fresh vegetables to pantry
+                        essentials, find good food for every day.
+                    </p>
+
+                </div>
+
+
+                <div
+                    class="category-grid"
+                    id="category-grid"
+                    aria-live="polite"
+                >
+
+                    <!-- Categories rendered by JavaScript -->
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ====================================
+             FEATURED PRODUCTS
+        ==================================== -->
+
+        <section
+            class="section featured-products-section bg-white"
+            aria-labelledby="featured-products-title"
+        >
+
+            <div class="container">
+
+                <div class="section-header section-header-row">
+
+                    <div>
+
+                        <span class="eyebrow">
+                            Fresh this week
+                        </span>
+
+                        <h2
+                            class="section-title"
+                            id="featured-products-title"
+                        >
+                            Featured products
+                        </h2>
+
+                    </div>
+
+                    <a
+                        href="pages/shop.html"
+                        class="text-link"
+                    >
+                        View all products
+                    </a>
+
+                </div>
+
+
+                <div
+                    class="product-grid"
+                    id="featured-products"
+                    aria-live="polite"
+                >
+
+                    <!-- Products rendered by JavaScript -->
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ====================================
+             BRAND / ORGANIC STORY
+        ==================================== -->
+
+        <section
+            class="section brand-section"
+            id="about"
+            aria-labelledby="brand-title"
+        >
+
+            <div class="container brand-grid">
+
+                <div class="brand-media">
+
+                    <img
+                        src="assets/images/farmers/farmer.jpg"
+                        alt="Farmer tending to an organic crop"
+                        loading="lazy"
+                    >
+
+                </div>
+
+
+                <div class="brand-copy">
+
+                    <span class="eyebrow">
+                        Why organic?
+                    </span>
+
+                    <h2 id="brand-title">
+                        Better for your table.
+                        Better for the earth.
+                    </h2>
+
+                    <p>
+                        We believe good food begins with good
+                        farming. That's why we work with growers
+                        who prioritize healthy soil, responsible
+                        practices, and honest ingredients.
+                    </p>
+
+                    <p>
+                        Every product is selected with the same
+                        simple principle in mind: food should be
+                        good for you and good for the world around
+                        you.
+                    </p>
+
+                    <a
+                        href="pages/about.html"
+                        class="btn btn-outline"
+                    >
+                        Our Story
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ====================================
+             PROMOTIONAL BANNER
+        ==================================== -->
+
+        <section
+            class="promo-section"
+            aria-labelledby="promo-title"
+        >
+
+            <div class="container">
+
+                <div class="promo-banner">
+
+                    <div class="promo-copy">
+
+                        <span class="eyebrow">
+                            Seasonal goodness
+                        </span>
+
+                        <h2 id="promo-title">
+                            Fresh from the farm
+                            to your table.
+                        </h2>
+
+                        <p>
+                            Discover seasonal produce and
+                            thoughtfully selected organic
+                            essentials.
+                        </p>
+
+                        <a
+                            href="pages/shop.html"
+                            class="btn btn-primary"
+                        >
+                            Shop Seasonal
+                        </a>
+
+                    </div>
+
+
+                    <div class="promo-media">
+
+                        <img
+                            src="assets/images/banners/seasonal.jpg"
+                            alt="Seasonal organic produce"
+                            loading="lazy"
+                        >
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ====================================
+             BEST SELLERS
+        ==================================== -->
+
+        <section
+            class="section best-sellers-section"
+            aria-labelledby="best-sellers-title"
+        >
+
+            <div class="container">
+
+                <div class="section-header section-header-row">
+
+                    <div>
+
+                        <span class="eyebrow">
+                            Customer favorites
+                        </span>
+
+                        <h2
+                            class="section-title"
+                            id="best-sellers-title"
+                        >
+                            Best sellers
+                        </h2>
+
+                    </div>
+
+                    <a
+                        href="pages/shop.html"
+                        class="text-link"
+                    >
+                        Shop everything
+                    </a>
+
+                </div>
+
+
+                <div
+                    class="product-grid"
+                    id="best-sellers"
+                    aria-live="polite"
+                >
+
+                    <!-- Products rendered by JavaScript -->
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ====================================
+             TESTIMONIALS
+        ==================================== -->
+
+        <section
+            class="section testimonials-section bg-white"
+            aria-labelledby="testimonials-title"
+        >
+
+            <div class="container">
+
+                <div class="section-header text-center">
+
+                    <span class="eyebrow">
+                        From our community
+                    </span>
+
+                    <h2
+                        class="section-title"
+                        id="testimonials-title"
+                    >
+                        Good food speaks for itself.
+                    </h2>
+
+                </div>
+
+
+                <div
+                    class="testimonial-grid"
+                    id="testimonial-grid"
+                    aria-live="polite"
+                >
+
+                    <!-- Testimonials rendered by JavaScript -->
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ====================================
+             NEWSLETTER
+        ==================================== -->
+
+        <section
+            class="newsletter-section"
+            aria-labelledby="newsletter-title"
+        >
+
+            <div class="container">
+
+                <div class="newsletter-content">
+
+                    <div class="newsletter-copy">
+
+                        <span class="eyebrow">
+                            Stay in the loop
+                        </span>
+
+                        <h2 id="newsletter-title">
+                            Fresh news,
+                            straight to your inbox.
+                        </h2>
+
+                        <p>
+                            Get seasonal updates, new arrivals,
+                            recipes, and occasional offers.
+                        </p>
+
+                    </div>
+
+
+                    <form
+                        class="newsletter-form"
+                        id="newsletter-form"
+                    >
+
+                        <label
+                            for="newsletter-email"
+                            class="sr-only"
+                        >
+                            Email address
+                        </label>
+
+                        <input
+                            type="email"
+                            id="newsletter-email"
+                            name="email"
+                            placeholder="Your email address"
+                            autocomplete="email"
+                            inputmode="email"
+                            required
+                        >
+
+                        <button
+                            type="submit"
+                            class="btn btn-primary"
+                        >
+                            Subscribe
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ========================================
+         FOOTER
+    ======================================== -->
+
+    <footer class="site-footer">
+
+        <div class="container">
+
+            <div class="footer-content">
+
+                <div class="footer-brand">
+
+                    <a
+                        href="index.html"
+                        class="logo"
+                    >
+                        Organic
+                    </a>
+
+                    <p>
+                        Fresh, organic groceries
+                        sourced with care.
+                    </p>
+
+                </div>
+
+
+                <div class="footer-links">
+
+                    <div class="footer-column">
+
+                        <h3>Shop</h3>
+
+                        <ul>
+
+                            <li>
+                                <a href="pages/shop.html">
+                                    All Products
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#categories">
+                                    Categories
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="pages/wishlist.html">
+                                    Wishlist
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+
+                    <div class="footer-column">
+
+                        <h3>Company</h3>
+
+                        <ul>
+
+                            <li>
+                                <a href="pages/about.html">
+                                    About Us
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="pages/contact.html">
+                                    Contact
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+
+                    <div class="footer-column">
+
+                        <h3>Account</h3>
+
+                        <ul>
+
+                            <li>
+                                <a href="pages/login.html">
+                                    Login
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="pages/register.html">
+                                    Register
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="pages/orders.html">
+                                    Orders
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <p>
+                    &copy; 2026 Organic Grocery Store.
+                    All rights reserved.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ========================================
+         JAVASCRIPT
+    ======================================== -->
+
+    <script src="data/categories.js" defer></script>
+    <script src="data/products.js" defer></script>
+    <script src="data/testimonials.js" defer></script>
+
+    <script src="js/products.js" defer></script>
+    <script src="js/cart.js" defer></script>
+    <script src="js/main.js" defer></script>
+
+</body>
+
+</html>

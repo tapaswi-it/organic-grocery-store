@@ -1,0 +1,282 @@
+:root {
+    /* ========================================
+       ORGANIC GROCERY STORE
+       DESIGN SYSTEM TOKENS
+    ======================================== */
+
+
+    /* ========================================
+       BRAND COLORS
+    ======================================== */
+
+    --color-primary: #244b36;
+    --color-primary-dark: #193a29;
+    --color-primary-deep: #10291d;
+    --color-primary-light: #3d6b50;
+
+    --color-sage: #8faf8f;
+    --color-sage-light: #dfe9df;
+    --color-sage-pale: #eef3ec;
+
+    --color-cream: #f8f6ef;
+    --color-cream-dark: #f0eee5;
+
+    --color-white: #ffffff;
+
+    --color-terracotta: #c97852;
+    --color-terracotta-dark: #a95d3c;
+    --color-terracotta-light: #f1ddd4;
+    --color-terracotta-pale: #f8eee9;
+
+
+    /* ========================================
+       TEXT COLORS
+    ======================================== */
+
+    --color-text: #202522;
+    --color-text-secondary: #687269;
+    --color-text-light: #8b938d;
+    --color-text-inverse: #ffffff;
+
+
+    /* ========================================
+       SURFACE COLORS
+    ======================================== */
+
+    --color-surface: #ffffff;
+    --color-surface-soft: #fbfaf6;
+    --color-surface-muted: #f3f2eb;
+    --color-surface-sage: #eef3ec;
+    --color-surface-dark: #244b36;
+
+
+    /* ========================================
+       BORDERS & DIVIDERS
+    ======================================== */
+
+    --color-border: #e3e5dd;
+    --color-border-light: #ecece5;
+    --color-border-dark: #ccd1c9;
+
+
+    /* ========================================
+       SEMANTIC COLORS
+    ======================================== */
+
+    --color-success: #4f7d55;
+    --color-success-light: #e5efe5;
+
+    --color-warning: #c58a3a;
+    --color-warning-light: #f6ead6;
+
+    --color-error: #b94a48;
+    --color-error-light: #f5dfde;
+
+
+    /* ========================================
+       TYPOGRAPHY
+    ======================================== */
+
+    --font-primary: "Manrope", sans-serif;
+    --font-display: "DM Serif Display", serif;
+
+
+    /* Font weights */
+
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    --font-weight-extrabold: 800;
+
+
+    /* ========================================
+       FONT SIZES
+    ======================================== */
+
+    --text-xs: 0.75rem;
+    --text-sm: 0.875rem;
+    --text-base: 1rem;
+    --text-lg: 1.125rem;
+    --text-xl: 1.25rem;
+    --text-2xl: 1.5rem;
+    --text-3xl: 1.875rem;
+    --text-4xl: 2.25rem;
+    --text-5xl: 3rem;
+    --text-6xl: 3.75rem;
+    --text-7xl: 4.5rem;
+
+
+    /* ========================================
+       LINE HEIGHTS
+    ======================================== */
+
+    --leading-none: 1;
+    --leading-tight: 1.1;
+    --leading-snug: 1.25;
+    --leading-normal: 1.5;
+    --leading-relaxed: 1.7;
+
+
+    /* ========================================
+       LETTER SPACING
+    ======================================== */
+
+    --tracking-tight: -0.025em;
+    --tracking-normal: 0;
+    --tracking-wide: 0.025em;
+    --tracking-wider: 0.075em;
+    --tracking-widest: 0.12em;
+
+
+    /* ========================================
+       SPACING SCALE
+    ======================================== */
+
+    --space-1: 0.25rem;
+    --space-2: 0.5rem;
+    --space-3: 0.75rem;
+    --space-4: 1rem;
+    --space-5: 1.25rem;
+    --space-6: 1.5rem;
+    --space-8: 2rem;
+    --space-10: 2.5rem;
+    --space-12: 3rem;
+    --space-16: 4rem;
+    --space-20: 5rem;
+    --space-24: 6rem;
+    --space-32: 8rem;
+    --space-40: 10rem;
+
+
+    /* ========================================
+       LAYOUT
+    ======================================== */
+
+    --container-max-width: 1280px;
+    --container-padding: 1.5rem;
+
+    --content-max-width: 760px;
+    --narrow-max-width: 560px;
+
+    --header-height: 76px;
+    --header-height-mobile: 68px;
+
+
+    /* ========================================
+       GRID
+    ======================================== */
+
+    --grid-gap-sm: 1rem;
+    --grid-gap-md: 1.5rem;
+    --grid-gap-lg: 2rem;
+    --grid-gap-xl: 2.5rem;
+
+
+    /* ========================================
+       BORDER RADIUS
+    ======================================== */
+
+    --radius-xs: 0.25rem;
+    --radius-sm: 0.375rem;
+    --radius-md: 0.625rem;
+    --radius-lg: 1rem;
+    --radius-xl: 1.5rem;
+    --radius-2xl: 2rem;
+    --radius-full: 9999px;
+
+
+    /* ========================================
+       SHADOWS
+    ======================================== */
+
+    --shadow-xs:
+        0 1px 3px rgba(32, 37, 34, 0.04);
+
+    --shadow-sm:
+        0 2px 8px rgba(32, 37, 34, 0.06);
+
+    --shadow-md:
+        0 6px 20px rgba(32, 37, 34, 0.08);
+
+    --shadow-lg:
+        0 12px 40px rgba(32, 37, 34, 0.12);
+
+    --shadow-xl:
+        0 20px 60px rgba(32, 37, 34, 0.16);
+
+    --shadow-header:
+        0 4px 20px rgba(32, 37, 34, 0.06);
+
+
+    /* ========================================
+       TRANSITIONS
+    ======================================== */
+
+    --transition-fast: 150ms ease;
+    --transition-base: 250ms ease;
+    --transition-slow: 400ms ease;
+
+    --transition-transform:
+        transform 250ms ease;
+
+    --transition-surface:
+        background-color 250ms ease,
+        border-color 250ms ease,
+        box-shadow 250ms ease;
+
+
+    /* ========================================
+       Z-INDEX
+    ======================================== */
+
+    --z-base: 1;
+    --z-dropdown: 100;
+    --z-sticky: 200;
+    --z-overlay: 500;
+    --z-modal: 1000;
+    --z-toast: 1100;
+
+
+    /* ========================================
+       PRODUCT IMAGE SYSTEM
+    ======================================== */
+
+    --product-image-bg: #f3f2eb;
+    --product-image-bg-hover: #e9eee7;
+
+    --category-image-overlay:
+        linear-gradient(
+            to top,
+            rgba(16, 41, 29, 0.58),
+            rgba(16, 41, 29, 0.02) 65%
+        );
+
+
+    /* ========================================
+       FORM CONTROLS
+    ======================================== */
+
+    --input-height: 48px;
+    --input-height-large: 54px;
+
+    --input-background: #ffffff;
+    --input-border: #dfe2da;
+    --input-border-focus: #244b36;
+
+    --focus-ring:
+        0 0 0 3px rgba(36, 75, 54, 0.14);
+
+
+    /* ========================================
+       DECORATIVE BRAND DETAILS
+    ======================================== */
+
+    --eyebrow-color: #687269;
+    --eyebrow-accent: #c97852;
+
+    --divider-color: #e3e5dd;
+
+    --selection-background: #8faf8f;
+    --selection-color: #202522;
+}

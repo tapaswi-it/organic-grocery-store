@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- ========================================
+         DOCUMENT METADATA
+    ======================================== -->
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Complete your order from our organic grocery store."
+    >
+
+    <meta
+        name="theme-color"
+        content="#244b36"
+    >
+
+    <title>Checkout | Organic Grocery Store</title>
+
+
+    <!-- ========================================
+         STYLESHEETS
+    ======================================== -->
+
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+
+
+    <!-- ========================================
+         FAVICON
+    ======================================== -->
+
+    <link
+        rel="icon"
+        href="../favicon.ico"
+        type="image/x-icon"
+    >
+
+</head>
+
+
+<body>
+
+    <!-- ========================================
+         HEADER / NAVIGATION
+    ======================================== -->
+
+    <header class="site-header">
+
+        <nav
+            class="navbar container"
+            aria-label="Main navigation"
+        >
+
+            <a
+                href="../index.html"
+                class="logo"
+                aria-label="Organic Grocery Store home"
+            >
+                Organic
+            </a>
+
+
+            <button
+                class="menu-toggle"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="primary-navigation"
+            >
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+
+
+            <ul
+                class="nav-links"
+                id="primary-navigation"
+            >
+
+                <li>
+                    <a href="shop.html">
+                        Shop
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../index.html#categories">
+                        Categories
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../index.html#about">
+                        Our Story
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+
+            <div class="nav-actions">
+
+                <a
+                    href="login.html"
+                    aria-label="Account"
+                >
+                    Account
+                </a>
+
+                <a
+                    href="wishlist.html"
+                    aria-label="Wishlist"
+                >
+                    Wishlist
+                </a>
+
+                <a
+                    href="cart.html"
+                    class="cart-link"
+                    aria-label="Shopping cart"
+                >
+                    Cart
+
+                    <span
+                        class="cart-count"
+                        data-cart-count
+                    >
+                        0
+                    </span>
+
+                </a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ========================================
+         MAIN CONTENT
+    ======================================== -->
+
+    <main id="main-content">
+
+        <section class="checkout-section section">
+
+            <div class="container">
+
+
+                <!-- ==================================
+                     CHECKOUT HEADER
+                ================================== -->
+
+                <div class="section-header checkout-header">
+
+                    <span class="eyebrow">
+                        Almost there
+                    </span>
+
+                    <h1>
+                        Complete your order.
+                    </h1>
+
+                    <p class="section-description">
+                        Enter your details below and we'll
+                        take care of the rest.
+                    </p>
+
+                </div>
+
+
+                <!-- ==================================
+                     CHECKOUT LAYOUT
+                ================================== -->
+
+                <div class="checkout-layout">
+
+
+                    <!-- ==================================
+                         CHECKOUT FORM
+                    ================================== -->
+
+                    <form
+                        class="checkout-form"
+                        id="checkout-form"
+                    >
+
+
+                        <!-- ==================================
+                             CONTACT INFORMATION
+                        ================================== -->
+
+                        <fieldset class="checkout-fieldset">
+
+                            <legend>
+                                Contact information
+                            </legend>
+
+                            <p class="checkout-fieldset-description">
+                                Where can we reach you about
+                                your order?
+                            </p>
+
+
+                            <div class="form-grid">
+
+                                <div class="form-field form-field-full">
+
+                                    <label for="checkout-email">
+                                        Email address
+                                    </label>
+
+                                    <input
+                                        type="email"
+                                        id="checkout-email"
+                                        name="email"
+                                        autocomplete="email"
+                                        placeholder="you@example.com"
+                                        required
+                                    >
+
+                                </div>
+
+                            </div>
+
+                        </fieldset>
+
+
+                        <!-- ==================================
+                             DELIVERY INFORMATION
+                        ================================== -->
+
+                        <fieldset class="checkout-fieldset">
+
+                            <legend>
+                                Delivery details
+                            </legend>
+
+                            <p class="checkout-fieldset-description">
+                                Tell us where you'd like your
+                                groceries delivered.
+                            </p>
+
+
+                            <div class="form-grid">
+
+                                <div class="form-field">
+
+                                    <label for="checkout-first-name">
+                                        First name
+                                    </label>
+
+                                    <input
+                                        type="text"
+                                        id="checkout-first-name"
+                                        name="firstName"
+                                        autocomplete="given-name"
+                                        required
+                                    >
+
+                                </div>
+
+
+                                <div class="form-field">
+
+                                    <label for="checkout-last-name">
+                                        Last name
+                                    </label>
+
+                                    <input
+                                        type="text"
+                                        id="checkout-last-name"
+                                        name="lastName"
+                                        autocomplete="family-name"
+                                        required
+                                    >
+
+                                </div>
+
+
+                                <div class="form-field form-field-full">
+
+                                    <label for="checkout-address">
+                                        Street address
+                                    </label>
+
+                                    <input
+                                        type="text"
+                                        id="checkout-address"
+                                        name="address"
+                                        autocomplete="street-address"
+                                        placeholder="123 Main Street"
+                                        required
+                                    >
+
+                                </div>
+
+
+                                <div class="form-field">
+
+                                    <label for="checkout-city">
+                                        City
+                                    </label>
+
+                                    <input
+                                        type="text"
+                                        id="checkout-city"
+                                        name="city"
+                                        autocomplete="address-level2"
+                                        required
+                                    >
+
+                                </div>
+
+
+                                <div class="form-field">
+
+                                    <label for="checkout-state">
+                                        State / Province
+                                    </label>
+
+                                    <input
+                                        type="text"
+                                        id="checkout-state"
+                                        name="state"
+                                        autocomplete="address-level1"
+                                        required
+                                    >
+
+                                </div>
+
+
+                                <div class="form-field">
+
+                                    <label for="checkout-postal-code">
+                                        Postal code
+                                    </label>
+
+                                    <input
+                                        type="text"
+                                        id="checkout-postal-code"
+                                        name="postalCode"
+                                        autocomplete="postal-code"
+                                        required
+                                    >
+
+                                </div>
+
+
+                                <div class="form-field">
+
+                                    <label for="checkout-phone">
+                                        Phone number
+                                    </label>
+
+                                    <input
+                                        type="tel"
+                                        id="checkout-phone"
+                                        name="phone"
+                                        autocomplete="tel"
+                                        placeholder="Optional"
+                                    >
+
+                                </div>
+
+                            </div>
+
+                        </fieldset>
+
+
+                        <!-- ==================================
+                             DELIVERY METHOD
+                        ================================== -->
+
+                        <fieldset class="checkout-fieldset">
+
+                            <legend>
+                                Delivery method
+                            </legend>
+
+                            <p class="checkout-fieldset-description">
+                                Choose how you'd like to receive
+                                your order.
+                            </p>
+
+
+                            <div class="delivery-options">
+
+
+                                <label class="delivery-option">
+
+                                    <input
+                                        type="radio"
+                                        name="deliveryMethod"
+                                        value="standard"
+                                        checked
+                                    >
+
+                                    <span class="delivery-option-content">
+
+                                        <strong>
+                                            Standard delivery
+                                        </strong>
+
+                                        <span>
+                                            Fresh to your door
+                                        </span>
+
+                                    </span>
+
+                                    <span class="delivery-option-price">
+                                        $5.00
+                                    </span>
+
+                                </label>
+
+
+                                <label class="delivery-option">
+
+                                    <input
+                                        type="radio"
+                                        name="deliveryMethod"
+                                        value="express"
+                                    >
+
+                                    <span class="delivery-option-content">
+
+                                        <strong>
+                                            Express delivery
+                                        </strong>
+
+                                        <span>
+                                            Priority delivery when available
+                                        </span>
+
+                                    </span>
+
+                                    <span class="delivery-option-price">
+                                        $10.00
+                                    </span>
+
+                                </label>
+
+                            </div>
+
+                        </fieldset>
+
+
+                        <!-- ==================================
+                             PAYMENT
+                        ================================== -->
+
+                        <fieldset class="checkout-fieldset">
+
+                            <legend>
+                                Payment
+                            </legend>
+
+                            <p class="checkout-fieldset-description">
+                                Enter your payment details securely.
+                            </p>
+
+
+                            <div class="payment-note">
+
+                                <span
+                                    class="payment-note-icon"
+                                    aria-hidden="true"
+                                >
+                                    ✓
+                                </span>
+
+                                <p>
+                                    Payment processing will be
+                                    securely handled at checkout.
+                                </p>
+
+                            </div>
+
+
+                            <div class="form-grid">
+
+                                <div class="form-field form-field-full">
+
+                                    <label for="checkout-card">
+                                        Card number
+                                    </label>
+
+                                    <input
+                                        type="text"
+                                        id="checkout-card"
+                                        name="cardNumber"
+                                        inputmode="numeric"
+                                        autocomplete="cc-number"
+                                        placeholder="1234 5678 9012 3456"
+                                        maxlength="19"
+                                        required
+                                    >
+
+                                </div>
+
+
+                                <div class="form-field">
+
+                                    <label for="checkout-expiry">
+                                        Expiry date
+                                    </label>
+
+                                    <input
+                                        type="text"
+                                        id="checkout-expiry"
+                                        name="expiry"
+                                        inputmode="numeric"
+                                        autocomplete="cc-exp"
+                                        placeholder="MM / YY"
+                                        required
+                                    >
+
+                                </div>
+
+
+                                <div class="form-field">
+
+                                    <label for="checkout-cvc">
+                                        Security code
+                                    </label>
+
+                                    <input
+                                        type="text"
+                                        id="checkout-cvc"
+                                        name="cvc"
+                                        inputmode="numeric"
+                                        autocomplete="cc-csc"
+                                        placeholder="CVC"
+                                        maxlength="4"
+                                        required
+                                    >
+
+                                </div>
+
+                            </div>
+
+                        </fieldset>
+
+
+                        <!-- ==================================
+                             ORDER NOTES
+                        ================================== -->
+
+                        <fieldset class="checkout-fieldset">
+
+                            <legend>
+                                Order notes
+                            </legend>
+
+                            <p class="checkout-fieldset-description">
+                                Anything we should know about
+                                your delivery?
+                            </p>
+
+
+                            <div class="form-field">
+
+                                <label for="checkout-notes">
+                                    Notes
+                                </label>
+
+                                <textarea
+                                    id="checkout-notes"
+                                    name="notes"
+                                    placeholder="Optional delivery instructions..."
+                                ></textarea>
+
+                            </div>
+
+                        </fieldset>
+
+
+                        <!-- ==================================
+                             SUBMIT
+                        ================================== -->
+
+                        <div class="checkout-submit">
+
+                            <button
+                                type="submit"
+                                class="btn btn-primary checkout-place-order"
+                            >
+                                Place order
+                            </button>
+
+                            <p class="checkout-secure-note">
+                                By placing your order, you agree
+                                to our terms and conditions.
+                            </p>
+
+                        </div>
+
+                    </form>
+
+
+                    <!-- ==================================
+                         ORDER SUMMARY
+                    ================================== -->
+
+                    <aside
+                        class="checkout-summary"
+                        aria-label="Order summary"
+                    >
+
+                        <div class="checkout-summary-inner">
+
+                            <div class="checkout-summary-header">
+
+                                <span class="eyebrow">
+                                    Your basket
+                                </span>
+
+                                <h2>
+                                    Order summary
+                                </h2>
+
+                            </div>
+
+
+                            <div
+                                class="checkout-items"
+                                id="checkout-items"
+                                aria-live="polite"
+                            >
+
+                                <!-- Order items rendered by JavaScript -->
+
+                            </div>
+
+
+                            <div class="checkout-summary-divider"></div>
+
+
+                            <div class="checkout-summary-row">
+
+                                <span>
+                                    Subtotal
+                                </span>
+
+                                <strong data-checkout-subtotal>
+                                    $0.00
+                                </strong>
+
+                            </div>
+
+
+                            <div class="checkout-summary-row">
+
+                                <span>
+                                    Delivery
+                                </span>
+
+                                <strong data-checkout-delivery>
+                                    $5.00
+                                </strong>
+
+                            </div>
+
+
+                            <div class="checkout-summary-divider"></div>
+
+
+                            <div class="checkout-summary-row checkout-total">
+
+                                <span>
+                                    Total
+                                </span>
+
+                                <strong data-checkout-total>
+                                    $0.00
+                                </strong>
+
+                            </div>
+
+
+                            <a
+                                href="cart.html"
+                                class="checkout-back-link"
+                            >
+                                ← Back to cart
+                            </a>
+
+                        </div>
+
+                    </aside>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ========================================
+         FOOTER
+    ======================================== -->
+
+    <footer class="site-footer">
+
+        <div class="container">
+
+            <div class="footer-content">
+
+
+                <!-- Brand -->
+
+                <div class="footer-brand">
+
+                    <a
+                        href="../index.html"
+                        class="logo"
+                    >
+                        Organic
+                    </a>
+
+                    <p>
+                        Fresh, organic groceries
+                        sourced with care.
+                    </p>
+
+                </div>
+
+
+                <!-- Footer navigation -->
+
+                <div class="footer-links">
+
+
+                    <div class="footer-column">
+
+                        <h3>
+                            Shop
+                        </h3>
+
+                        <ul>
+
+                            <li>
+                                <a href="shop.html">
+                                    All Products
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="../index.html#categories">
+                                    Categories
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="wishlist.html">
+                                    Wishlist
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="cart.html">
+                                    Cart
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+
+                    <div class="footer-column">
+
+                        <h3>
+                            Company
+                        </h3>
+
+                        <ul>
+
+                            <li>
+                                <a href="about.html">
+                                    About Us
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="contact.html">
+                                    Contact
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+
+                    <div class="footer-column">
+
+                        <h3>
+                            Account
+                        </h3>
+
+                        <ul>
+
+                            <li>
+                                <a href="login.html">
+                                    Login
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="register.html">
+                                    Register
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="orders.html">
+                                    Orders
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <p>
+                    &copy; 2026 Organic Grocery Store.
+                    All rights reserved.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ========================================
+         JAVASCRIPT
+    ======================================== -->
+
+    <script src="../data/categories.js" defer></script>
+    <script src="../data/products.js" defer></script>
+
+    <script src="../js/cart.js" defer></script>
+    <script src="../js/forms.js" defer></script>
+    <script src="../js/main.js" defer></script>
+
+</body>
+
+</html>

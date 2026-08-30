@@ -1,0 +1,553 @@
+/* ========================================
+   RESPONSIVE SYSTEM
+======================================== */
+
+
+/* ========================================
+   TABLET / LARGE MOBILE
+======================================== */
+
+@media (max-width: 1024px) {
+
+    :root {
+        --container-padding: 1.25rem;
+    }
+
+
+    /* ----------------------------------------
+       Typography
+    ---------------------------------------- */
+
+    h1 {
+        font-size: var(--text-5xl);
+    }
+
+    h2 {
+        font-size: var(--text-3xl);
+    }
+
+    h3 {
+        font-size: var(--text-xl);
+    }
+
+
+    /* ----------------------------------------
+       Layout
+    ---------------------------------------- */
+
+    .section {
+        padding-block: var(--space-16);
+    }
+
+
+    /* ----------------------------------------
+       Header
+    ---------------------------------------- */
+
+    .navbar {
+        min-height: 76px;
+    }
+
+    .nav-links {
+        gap: var(--space-5);
+    }
+
+    .nav-actions {
+        gap: var(--space-3);
+    }
+
+
+    /* ----------------------------------------
+       Hero
+    ---------------------------------------- */
+
+    .hero-content {
+        gap: var(--space-10);
+    }
+
+    .hero-copy {
+        max-width: 520px;
+    }
+
+
+    /* ----------------------------------------
+       Product / Category Grids
+    ---------------------------------------- */
+
+    .product-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: var(--space-5);
+    }
+
+    .category-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: var(--space-5);
+    }
+
+
+    /* ----------------------------------------
+       Brand Section
+    ---------------------------------------- */
+
+    .brand-grid {
+        gap: var(--space-10);
+    }
+
+
+    /* ----------------------------------------
+       Shop
+    ---------------------------------------- */
+
+    .shop-layout {
+        grid-template-columns: 220px minmax(0, 1fr);
+        gap: var(--space-8);
+    }
+
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 768px) {
+
+    :root {
+        --container-padding: 1rem;
+    }
+
+
+    html {
+        font-size: 15px;
+    }
+
+
+    /* ----------------------------------------
+       Typography
+    ---------------------------------------- */
+
+    h1 {
+        font-size: var(--text-4xl);
+    }
+
+    h2 {
+        font-size: var(--text-3xl);
+    }
+
+    h3 {
+        font-size: var(--text-xl);
+    }
+
+
+    /* ----------------------------------------
+       Layout
+    ---------------------------------------- */
+
+    .section {
+        padding-block: var(--space-12);
+    }
+
+    .section-header {
+        margin-bottom: var(--space-6);
+    }
+
+    .section-description {
+        max-width: 100%;
+    }
+
+
+    /* ----------------------------------------
+       Buttons
+    ---------------------------------------- */
+
+    .btn {
+        min-height: 46px;
+        padding-inline: var(--space-5);
+    }
+
+
+    /* ----------------------------------------
+       Header
+    ---------------------------------------- */
+
+    .site-header {
+        position: sticky;
+        top: 0;
+        z-index: var(--z-sticky);
+    }
+
+    .navbar {
+        min-height: 68px;
+    }
+
+    .menu-toggle {
+        display: inline-flex;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .nav-actions {
+        margin-left: auto;
+    }
+
+    .nav-open .nav-links {
+        display: flex;
+    }
+
+
+    /* ----------------------------------------
+       Hero
+    ---------------------------------------- */
+
+    .hero-content {
+        grid-template-columns: 1fr;
+        gap: var(--space-8);
+    }
+
+    .hero-copy {
+        max-width: 640px;
+    }
+
+    .hero-media {
+        order: -1;
+    }
+
+    .hero-actions {
+        flex-wrap: wrap;
+    }
+
+
+    /* ----------------------------------------
+       Section Headers
+    ---------------------------------------- */
+
+    .section-header-row {
+        align-items: flex-start;
+        gap: var(--space-4);
+    }
+
+
+    /* ----------------------------------------
+       Category Grid
+    ---------------------------------------- */
+
+    .category-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: var(--space-4);
+    }
+
+
+    /* ----------------------------------------
+       Product Grid
+    ---------------------------------------- */
+
+    .product-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: var(--space-4);
+    }
+
+
+    /* ----------------------------------------
+       Brand Section
+    ---------------------------------------- */
+
+    .brand-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-8);
+    }
+
+    .brand-media {
+        order: -1;
+    }
+
+
+    /* ----------------------------------------
+       Promotional Banner
+    ---------------------------------------- */
+
+    .promo-banner {
+        grid-template-columns: 1fr;
+    }
+
+    .promo-media {
+        min-height: 280px;
+    }
+
+
+    /* ----------------------------------------
+       Testimonials
+    ---------------------------------------- */
+
+    .testimonial-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-4);
+    }
+
+
+    /* ----------------------------------------
+       Newsletter
+    ---------------------------------------- */
+
+    .newsletter-content {
+        grid-template-columns: 1fr;
+        gap: var(--space-6);
+    }
+
+    .newsletter-form {
+        width: 100%;
+    }
+
+
+    /* ----------------------------------------
+       Footer
+    ---------------------------------------- */
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: var(--space-8);
+    }
+
+    .footer-links {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+
+    /* ----------------------------------------
+       Shop
+    ---------------------------------------- */
+
+    .shop-layout {
+        grid-template-columns: 1fr;
+        gap: var(--space-8);
+    }
+
+    .shop-sidebar {
+        position: static;
+    }
+
+    .shop-toolbar {
+        grid-template-columns: 1fr;
+        gap: var(--space-3);
+    }
+
+    .shop-search,
+    .shop-sort {
+        width: 100%;
+    }
+
+
+    /* ----------------------------------------
+       Product Detail
+    ---------------------------------------- */
+
+    .product-detail {
+        grid-template-columns: 1fr;
+        gap: var(--space-8);
+    }
+
+    .product-detail-image {
+        max-width: 640px;
+        margin-inline: auto;
+        width: 100%;
+    }
+
+}
+
+
+/* ========================================
+   SMALL MOBILE
+======================================== */
+
+@media (max-width: 480px) {
+
+    :root {
+        --container-padding: 1rem;
+    }
+
+
+    html {
+        font-size: 15px;
+    }
+
+
+    /* ----------------------------------------
+       Typography
+    ---------------------------------------- */
+
+    h1 {
+        font-size: var(--text-3xl);
+    }
+
+    h2 {
+        font-size: var(--text-2xl);
+    }
+
+    h3 {
+        font-size: var(--text-lg);
+    }
+
+    h4 {
+        font-size: var(--text-base);
+    }
+
+
+    /* ----------------------------------------
+       Layout
+    ---------------------------------------- */
+
+    .section {
+        padding-block: var(--space-10);
+    }
+
+    .section-header {
+        margin-bottom: var(--space-5);
+    }
+
+
+    /* ----------------------------------------
+       Buttons
+    ---------------------------------------- */
+
+    .btn {
+        min-height: 44px;
+        padding-inline: var(--space-4);
+    }
+
+
+    /* ----------------------------------------
+       Header
+    ---------------------------------------- */
+
+    .navbar {
+        min-height: 64px;
+    }
+
+    .nav-actions {
+        gap: var(--space-2);
+    }
+
+
+    /* ----------------------------------------
+       Hero
+    ---------------------------------------- */
+
+    .hero-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .hero-actions .btn {
+        width: 100%;
+    }
+
+
+    /* ----------------------------------------
+       Category Grid
+    ---------------------------------------- */
+
+    .category-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* ----------------------------------------
+       Product Grid
+    ---------------------------------------- */
+
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* ----------------------------------------
+       Section Headers
+    ---------------------------------------- */
+
+    .section-header-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+
+    /* ----------------------------------------
+       Footer
+    ---------------------------------------- */
+
+    .footer-links {
+        grid-template-columns: 1fr 1fr;
+        gap: var(--space-6) var(--space-4);
+    }
+
+    .footer-column:last-child {
+        grid-column: 1 / -1;
+    }
+
+
+    /* ----------------------------------------
+       Shop
+    ---------------------------------------- */
+
+    .shop-toolbar {
+        gap: var(--space-2);
+    }
+
+    .shop-results-header {
+        margin-top: var(--space-4);
+    }
+
+
+    /* ----------------------------------------
+       Product Detail
+    ---------------------------------------- */
+
+    .product-detail-content h1 {
+        font-size: var(--text-3xl);
+    }
+
+    .quantity-control {
+        max-width: 100%;
+    }
+
+    .product-detail-add {
+        width: 100%;
+    }
+
+
+    /* ----------------------------------------
+       Newsletter
+    ---------------------------------------- */
+
+    .newsletter-form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .newsletter-form .btn {
+        width: 100%;
+    }
+
+}
+
+
+/* ========================================
+   REDUCED MOTION
+======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+
+}

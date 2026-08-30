@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- ========================================
+         DOCUMENT METADATA
+    ======================================== -->
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="View your order history and track your organic grocery orders."
+    >
+
+    <meta
+        name="theme-color"
+        content="#244b36"
+    >
+
+    <title>Orders | Organic Grocery Store</title>
+
+
+    <!-- ========================================
+         STYLESHEETS
+    ======================================== -->
+
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+
+
+    <!-- ========================================
+         FAVICON
+    ======================================== -->
+
+    <link
+        rel="icon"
+        href="../favicon.ico"
+        type="image/x-icon"
+    >
+
+</head>
+
+
+<body>
+
+    <!-- ========================================
+         HEADER / NAVIGATION
+    ======================================== -->
+
+    <header class="site-header">
+
+        <nav
+            class="navbar container"
+            aria-label="Main navigation"
+        >
+
+            <a
+                href="../index.html"
+                class="logo"
+                aria-label="Organic Grocery Store home"
+            >
+                Organic
+            </a>
+
+
+            <button
+                class="menu-toggle"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="primary-navigation"
+            >
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+
+
+            <ul
+                class="nav-links"
+                id="primary-navigation"
+            >
+
+                <li>
+                    <a href="shop.html">
+                        Shop
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../index.html#categories">
+                        Categories
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../index.html#about">
+                        Our Story
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+
+            <div class="nav-actions">
+
+                <a
+                    href="account.html"
+                    class="active"
+                >
+                    Account
+                </a>
+
+                <a href="wishlist.html">
+                    Wishlist
+                </a>
+
+                <a
+                    href="cart.html"
+                    class="cart-link"
+                >
+                    Cart
+
+                    <span
+                        class="cart-count"
+                        data-cart-count
+                    >
+                        0
+                    </span>
+
+                </a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ========================================
+         MAIN CONTENT
+    ======================================== -->
+
+    <main id="main-content">
+
+
+        <!-- ====================================
+             ORDERS HEADER
+        ==================================== -->
+
+        <section class="orders-header section">
+
+            <div class="container">
+
+                <span class="eyebrow">
+                    Your history
+                </span>
+
+                <h1>
+                    Your orders.
+                </h1>
+
+                <p class="section-description">
+                    Everything you've brought home from
+                    our little corner of the farm.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ====================================
+             ORDERS CONTENT
+        ==================================== -->
+
+        <section class="orders-section section">
+
+            <div class="container">
+
+                <div class="orders-layout">
+
+
+                    <!-- ==================================
+                         ACCOUNT SIDEBAR
+                    ================================== -->
+
+                    <aside
+                        class="account-sidebar"
+                        aria-label="Account navigation"
+                    >
+
+                        <div class="account-sidebar-inner">
+
+                            <span class="account-sidebar-label">
+                                Account
+                            </span>
+
+                            <nav aria-label="Account navigation">
+
+                                <ul class="account-nav">
+
+                                    <li>
+                                        <a href="account.html">
+                                            Overview
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a
+                                            href="orders.html"
+                                            class="active"
+                                            aria-current="page"
+                                        >
+                                            Orders
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="wishlist.html">
+                                            Wishlist
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="account.html#details">
+                                            Account details
+                                        </a>
+                                    </li>
+
+                                </ul>
+
+                            </nav>
+
+
+                            <div class="account-sidebar-divider"></div>
+
+
+                            <a
+                                href="login.html"
+                                class="account-sign-out"
+                            >
+                                Sign out
+                            </a>
+
+                        </div>
+
+                    </aside>
+
+
+                    <!-- ==================================
+                         ORDERS MAIN
+                    ================================== -->
+
+                    <div class="orders-main">
+
+
+                        <!-- ==================================
+                             ORDERS TOOLBAR
+                        ================================== -->
+
+                        <div class="orders-toolbar">
+
+                            <div>
+
+                                <span class="eyebrow">
+                                    Order history
+                                </span>
+
+                                <h2>
+                                    Recent orders
+                                </h2>
+
+                            </div>
+
+
+                            <div class="orders-filter">
+
+                                <label
+                                    for="order-status-filter"
+                                    class="sr-only"
+                                >
+                                    Filter orders by status
+                                </label>
+
+                                <select
+                                    id="order-status-filter"
+                                    name="order-status"
+                                >
+
+                                    <option value="all">
+                                        All orders
+                                    </option>
+
+                                    <option value="processing">
+                                        Processing
+                                    </option>
+
+                                    <option value="shipped">
+                                        Shipped
+                                    </option>
+
+                                    <option value="delivered">
+                                        Delivered
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- ==================================
+                             ORDER LIST
+                        ================================== -->
+
+                        <div
+                            class="orders-list"
+                            id="orders-list"
+                        >
+
+                            <!-- ==================================
+                                 ORDER
+                            ================================== -->
+
+                            <article
+                                class="order-card"
+                                data-order-status="delivered"
+                            >
+
+                                <div class="order-card-header">
+
+                                    <div>
+
+                                        <span class="order-number-label">
+                                            Order
+                                        </span>
+
+                                        <h3>
+                                            #ORG-2026-0018
+                                        </h3>
+
+                                    </div>
+
+
+                                    <span class="order-status order-status-delivered">
+                                        Delivered
+                                    </span>
+
+                                </div>
+
+
+                                <div class="order-card-meta">
+
+                                    <span>
+                                        March 18, 2026
+                                    </span>
+
+                                    <span aria-hidden="true">
+                                        ·
+                                    </span>
+
+                                    <span>
+                                        4 items
+                                    </span>
+
+                                    <span aria-hidden="true">
+                                        ·
+                                    </span>
+
+                                    <strong>
+                                        $42.80
+                                    </strong>
+
+                                </div>
+
+
+                                <div class="order-card-items">
+
+                                    <div class="order-item">
+
+                                        <div class="order-item-image">
+
+                                            <img
+                                                src="../assets/images/products/organic-apples.jpg"
+                                                alt="Organic apples"
+                                            >
+
+                                        </div>
+
+                                        <div class="order-item-info">
+
+                                            <strong>
+                                                Organic Apples
+                                            </strong>
+
+                                            <span>
+                                                1 × $6.50
+                                            </span>
+
+                                        </div>
+
+                                    </div>
+
+
+                                    <div class="order-item">
+
+                                        <div class="order-item-image">
+
+                                            <img
+                                                src="../assets/images/products/fresh-spinach.jpg"
+                                                alt="Fresh spinach"
+                                            >
+
+                                        </div>
+
+                                        <div class="order-item-info">
+
+                                            <strong>
+                                                Fresh Spinach
+                                            </strong>
+
+                                            <span>
+                                                1 × $4.25
+                                            </span>
+
+                                        </div>
+
+                                    </div>
+
+
+                                    <div class="order-item">
+
+                                        <div class="order-item-image">
+
+                                            <img
+                                                src="../assets/images/products/organic-eggs.jpg"
+                                                alt="Organic eggs"
+                                            >
+
+                                        </div>
+
+                                        <div class="order-item-info">
+
+                                            <strong>
+                                                Organic Eggs
+                                            </strong>
+
+                                            <span>
+                                                1 × $7.80
+                                            </span>
+
+                                        </div>
+
+                                    </div>
+
+
+                                    <div class="order-item order-item-more">
+
+                                        <span>
+                                            +1 more
+                                        </span>
+
+                                    </div>
+
+                                </div>
+
+
+                                <div class="order-card-footer">
+
+                                    <span class="order-delivery-note">
+                                        Delivered to your doorstep
+                                    </span>
+
+                                    <a
+                                        href="#"
+                                        class="btn btn-outline order-view-button"
+                                        data-order-id="ORG-2026-0018"
+                                    >
+                                        View order
+                                    </a>
+
+                                </div>
+
+                            </article>
+
+
+                            <!-- ==================================
+                                 ORDER
+                            ================================== -->
+
+                            <article
+                                class="order-card"
+                                data-order-status="shipped"
+                            >
+
+                                <div class="order-card-header">
+
+                                    <div>
+
+                                        <span class="order-number-label">
+                                            Order
+                                        </span>
+
+                                        <h3>
+                                            #ORG-2026-0012
+                                        </h3>
+
+                                    </div>
+
+
+                                    <span class="order-status order-status-shipped">
+                                        On its way
+                                    </span>
+
+                                </div>
+
+
+                                <div class="order-card-meta">
+
+                                    <span>
+                                        March 11, 2026
+                                    </span>
+
+                                    <span aria-hidden="true">
+                                        ·
+                                    </span>
+
+                                    <span>
+                                        6 items
+                                    </span>
+
+                                    <span aria-hidden="true">
+                                        ·
+                                    </span>
+
+                                    <strong>
+                                        $68.40
+                                    </strong>
+
+                                </div>
+
+
+                                <div class="order-card-items">
+
+                                    <div class="order-item">
+
+                                        <div class="order-item-image">
+
+                                            <img
+                                                src="../assets/images/products/avocado.jpg"
+                                                alt="Organic avocado"
+                                            >
+
+                                        </div>
+
+                                        <div class="order-item-info">
+
+                                            <strong>
+                                                Organic Avocado
+                                            </strong>
+
+                                            <span>
+                                                2 × $4.50
+                                            </span>
+
+                                        </div>
+
+                                    </div>
+
+
+                                    <div class="order-item">
+
+                                        <div class="order-item-image">
+
+                                            <img
+                                                src="../assets/images/products/sourdough-bread.jpg"
+                                                alt="Sourdough bread"
+                                            >
+
+                                        </div>
+
+                                        <div class="order-item-info">
+
+                                            <strong>
+                                                Sourdough Bread
+                                            </strong>
+
+                                            <span>
+                                                1 × $7.25
+                                            </span>
+
+                                        </div>
+
+                                    </div>
+
+
+                                    <div class="order-item">
+
+                                        <div class="order-item-image">
+
+                                            <img
+                                                src="../assets/images/products/olive-oil.jpg"
+                                                alt="Extra virgin olive oil"
+                                            >
+
+                                        </div>
+
+                                        <div class="order-item-info">
+
+                                            <strong>
+                                                Extra Virgin Olive Oil
+                                            </strong>
+
+                                            <span>
+                                                1 × $18.50
+                                            </span>
+
+                                        </div>
+
+                                    </div>
+
+
+                                    <div class="order-item order-item-more">
+
+                                        <span>
+                                            +3 more
+                                        </span>
+
+                                    </div>
+
+                                </div>
+
+
+                                <div class="order-card-footer">
+
+                                    <span class="order-delivery-note">
+                                        Expected delivery soon
+                                    </span>
+
+                                    <a
+                                        href="#"
+                                        class="btn btn-outline order-view-button"
+                                        data-order-id="ORG-2026-0012"
+                                    >
+                                        View order
+                                    </a>
+
+                                </div>
+
+                            </article>
+
+
+                            <!-- ==================================
+                                 ORDER
+                            ================================== -->
+
+                            <article
+                                class="order-card"
+                                data-order-status="processing"
+                            >
+
+                                <div class="order-card-header">
+
+                                    <div>
+
+                                        <span class="order-number-label">
+                                            Order
+                                        </span>
+
+                                        <h3>
+                                            #ORG-2026-0007
+                                        </h3>
+
+                                    </div>
+
+
+                                    <span class="order-status order-status-processing">
+                                        Processing
+                                    </span>
+
+                                </div>
+
+
+                                <div class="order-card-meta">
+
+                                    <span>
+                                        March 4, 2026
+                                    </span>
+
+                                    <span aria-hidden="true">
+                                        ·
+                                    </span>
+
+                                    <span>
+                                        3 items
+                                    </span>
+
+                                    <span aria-hidden="true">
+                                        ·
+                                    </span>
+
+                                    <strong>
+                                        $31.65
+                                    </strong>
+
+                                </div>
+
+
+                                <div class="order-card-items">
+
+                                    <div class="order-item">
+
+                                        <div class="order-item-image">
+
+                                            <img
+                                                src="../assets/images/products/seasonal-vegetables.jpg"
+                                                alt="Seasonal vegetables"
+                                            >
+
+                                        </div>
+
+                                        <div class="order-item-info">
+
+                                            <strong>
+                                                Seasonal Vegetable Box
+                                            </strong>
+
+                                            <span>
+                                                1 × $16.00
+                                            </span>
+
+                                        </div>
+
+                                    </div>
+
+
+                                    <div class="order-item">
+
+                                        <div class="order-item-image">
+
+                                            <img
+                                                src="../assets/images/products/honey.jpg"
+                                                alt="Raw organic honey"
+                                            >
+
+                                        </div>
+
+                                        <div class="order-item-info">
+
+                                            <strong>
+                                                Raw Organic Honey
+                                            </strong>
+
+                                            <span>
+                                                1 × $9.75
+                                            </span>
+
+                                        </div>
+
+                                    </div>
+
+
+                                    <div class="order-item">
+
+                                        <div class="order-item-image">
+
+                                            <img
+                                                src="../assets/images/products/granola.jpg"
+                                                alt="Organic granola"
+                                            >
+
+                                        </div>
+
+                                        <div class="order-item-info">
+
+                                            <strong>
+                                                Organic Granola
+                                            </strong>
+
+                                            <span>
+                                                1 × $5.90
+                                            </span>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+
+                                <div class="order-card-footer">
+
+                                    <span class="order-delivery-note">
+                                        We're preparing your order
+                                    </span>
+
+                                    <a
+                                        href="#"
+                                        class="btn btn-outline order-view-button"
+                                        data-order-id="ORG-2026-0007"
+                                    >
+                                        View order
+                                    </a>
+
+                                </div>
+
+                            </article>
+
+                        </div>
+
+
+                        <!-- ==================================
+                             EMPTY STATE
+                        ================================== -->
+
+                        <div
+                            class="orders-empty"
+                            id="orders-empty"
+                            hidden
+                        >
+
+                            <span
+                                class="orders-empty-mark"
+                                aria-hidden="true"
+                            >
+                                O
+                            </span>
+
+                            <h2>
+                                No orders here yet.
+                            </h2>
+
+                            <p>
+                                Your future grocery hauls will
+                                appear here once you've placed
+                                your first order.
+                            </p>
+
+                            <a
+                                href="shop.html"
+                                class="btn btn-primary"
+                            >
+                                Start shopping
+                            </a>
+
+                        </div>
+
+
+                        <!-- ==================================
+                             CONTINUE SHOPPING
+                        ================================== -->
+
+                        <div class="orders-continue">
+
+                            <p>
+                                Looking for something fresh?
+                            </p>
+
+                            <a
+                                href="shop.html"
+                                class="text-link"
+                            >
+                                Browse the shop →
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ========================================
+         FOOTER
+    ======================================== -->
+
+    <footer class="site-footer">
+
+        <div class="container">
+
+            <div class="footer-content">
+
+                <div class="footer-brand">
+
+                    <a
+                        href="../index.html"
+                        class="logo"
+                    >
+                        Organic
+                    </a>
+
+                    <p>
+                        Fresh, organic groceries
+                        sourced with care.
+                    </p>
+
+                </div>
+
+
+                <div class="footer-links">
+
+                    <div class="footer-column">
+
+                        <h3>
+                            Shop
+                        </h3>
+
+                        <ul>
+
+                            <li>
+                                <a href="shop.html">
+                                    All Products
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="../index.html#categories">
+                                    Categories
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="wishlist.html">
+                                    Wishlist
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+
+                    <div class="footer-column">
+
+                        <h3>
+                            Company
+                        </h3>
+
+                        <ul>
+
+                            <li>
+                                <a href="about.html">
+                                    About Us
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="contact.html">
+                                    Contact
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+
+                    <div class="footer-column">
+
+                        <h3>
+                            Account
+                        </h3>
+
+                        <ul>
+
+                            <li>
+                                <a href="account.html">
+                                    My Account
+                                </a>
+                            </li>
+
+                            <li>
+                                <a
+                                    href="orders.html"
+                                    aria-current="page"
+                                >
+                                    Orders
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="login.html">
+                                    Sign out
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <p>
+                    &copy; 2026 Organic Grocery Store.
+                    All rights reserved.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ========================================
+         JAVASCRIPT
+    ======================================== -->
+
+    <script src="../js/cart.js" defer></script>
+    <script src="../js/forms.js" defer></script>
+    <script src="../js/main.js" defer></script>
+
+</body>
+
+</html>

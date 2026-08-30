@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- ========================================
+         DOCUMENT METADATA
+    ======================================== -->
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="View and manage your favorite organic grocery products."
+    >
+
+    <meta
+        name="theme-color"
+        content="#244b36"
+    >
+
+    <title>Wishlist | Organic Grocery Store</title>
+
+
+    <!-- ========================================
+         STYLESHEETS
+    ======================================== -->
+
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+
+
+    <!-- ========================================
+         FAVICON
+    ======================================== -->
+
+    <link
+        rel="icon"
+        href="../favicon.ico"
+        type="image/x-icon"
+    >
+
+</head>
+
+
+<body>
+
+    <!-- ========================================
+         HEADER / NAVIGATION
+    ======================================== -->
+
+    <header class="site-header">
+
+        <nav
+            class="navbar container"
+            aria-label="Main navigation"
+        >
+
+            <a
+                href="../index.html"
+                class="logo"
+                aria-label="Organic Grocery Store home"
+            >
+                Organic
+            </a>
+
+
+            <button
+                class="menu-toggle"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="primary-navigation"
+            >
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+
+
+            <ul
+                class="nav-links"
+                id="primary-navigation"
+            >
+
+                <li>
+                    <a href="shop.html">
+                        Shop
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../index.html#categories">
+                        Categories
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../index.html#about">
+                        Our Story
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+
+            <div class="nav-actions">
+
+                <a href="account.html">
+                    Account
+                </a>
+
+                <a
+                    href="wishlist.html"
+                    class="active"
+                    aria-current="page"
+                >
+                    Wishlist
+                </a>
+
+                <a
+                    href="cart.html"
+                    class="cart-link"
+                >
+                    Cart
+
+                    <span
+                        class="cart-count"
+                        data-cart-count
+                    >
+                        0
+                    </span>
+
+                </a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ========================================
+         MAIN CONTENT
+    ======================================== -->
+
+    <main id="main-content">
+
+
+        <!-- ====================================
+             WISHLIST HEADER
+        ==================================== -->
+
+        <section class="wishlist-header section">
+
+            <div class="container">
+
+                <span class="eyebrow">
+                    Things worth keeping close
+                </span>
+
+                <h1>
+                    Your wishlist.
+                </h1>
+
+                <p class="section-description">
+                    Save the organic favorites you love
+                    and come back to them whenever you're ready.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ====================================
+             WISHLIST CONTENT
+        ==================================== -->
+
+        <section class="wishlist-section section">
+
+            <div class="container">
+
+
+                <!-- ==================================
+                     WISHLIST TOOLBAR
+                ================================== -->
+
+                <div
+                    class="wishlist-toolbar"
+                    id="wishlist-toolbar"
+                >
+
+                    <div class="wishlist-count">
+
+                        <span
+                            class="eyebrow"
+                            id="wishlist-count"
+                        >
+                            Your favorites
+                        </span>
+
+                    </div>
+
+
+                    <button
+                        type="button"
+                        class="wishlist-clear"
+                        id="clear-wishlist"
+                    >
+                        Clear wishlist
+                    </button>
+
+                </div>
+
+
+                <!-- ==================================
+                     WISHLIST PRODUCTS
+                ================================== -->
+
+                <div
+                    class="wishlist-grid product-grid"
+                    id="wishlist-grid"
+                >
+
+                    <!-- Wishlist products rendered by JavaScript -->
+
+                </div>
+
+
+                <!-- ==================================
+                     EMPTY WISHLIST
+                ================================== -->
+
+                <div
+                    class="wishlist-empty"
+                    id="wishlist-empty"
+                    hidden
+                >
+
+                    <div
+                        class="wishlist-empty-mark"
+                        aria-hidden="true"
+                    >
+                        ♡
+                    </div>
+
+                    <span class="eyebrow">
+                        Nothing saved yet
+                    </span>
+
+                    <h2>
+                        Keep your favorites close.
+                    </h2>
+
+                    <p>
+                        When you find something you love,
+                        tap the heart to save it here.
+                    </p>
+
+                    <a
+                        href="shop.html"
+                        class="btn btn-primary"
+                    >
+                        Explore the shop
+                    </a>
+
+                </div>
+
+
+                <!-- ==================================
+                     WISHLIST FOOTER NOTE
+                ================================== -->
+
+                <div
+                    class="wishlist-note"
+                    id="wishlist-note"
+                >
+
+                    <span
+                        class="wishlist-note-mark"
+                        aria-hidden="true"
+                    >
+                        ✦
+                    </span>
+
+                    <p>
+                        Favorites are saved to this device,
+                        so you can pick up where you left off.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ====================================
+             DISCOVERY CTA
+        ==================================== -->
+
+        <section class="wishlist-discovery">
+
+            <div class="container">
+
+                <div class="wishlist-discovery-inner">
+
+                    <div class="wishlist-discovery-copy">
+
+                        <span class="eyebrow">
+                            Keep exploring
+                        </span>
+
+                        <h2>
+                            Something new might
+                            become a favorite.
+                        </h2>
+
+                        <p>
+                            Browse seasonal produce, pantry
+                            staples, and everyday essentials
+                            selected with care.
+                        </p>
+
+                    </div>
+
+
+                    <a
+                        href="shop.html"
+                        class="btn btn-outline"
+                    >
+                        Browse all products
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ========================================
+         FOOTER
+    ======================================== -->
+
+    <footer class="site-footer">
+
+        <div class="container">
+
+            <div class="footer-content">
+
+                <div class="footer-brand">
+
+                    <a
+                        href="../index.html"
+                        class="logo"
+                    >
+                        Organic
+                    </a>
+
+                    <p>
+                        Fresh, organic groceries
+                        sourced with care.
+                    </p>
+
+                </div>
+
+
+                <div class="footer-links">
+
+                    <div class="footer-column">
+
+                        <h3>
+                            Shop
+                        </h3>
+
+                        <ul>
+
+                            <li>
+                                <a href="shop.html">
+                                    All Products
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="../index.html#categories">
+                                    Categories
+                                </a>
+                            </li>
+
+                            <li>
+                                <a
+                                    href="wishlist.html"
+                                    aria-current="page"
+                                >
+                                    Wishlist
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+
+                    <div class="footer-column">
+
+                        <h3>
+                            Company
+                        </h3>
+
+                        <ul>
+
+                            <li>
+                                <a href="about.html">
+                                    About Us
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="contact.html">
+                                    Contact
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+
+                    <div class="footer-column">
+
+                        <h3>
+                            Account
+                        </h3>
+
+                        <ul>
+
+                            <li>
+                                <a href="account.html">
+                                    My Account
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="orders.html">
+                                    Orders
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="login.html">
+                                    Login
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <p>
+                    &copy; 2026 Organic Grocery Store.
+                    All rights reserved.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ========================================
+         JAVASCRIPT
+    ======================================== -->
+
+    <script src="../data/categories.js" defer></script>
+    <script src="../data/products.js" defer></script>
+
+    <script src="../js/products.js" defer></script>
+    <script src="../js/wishlist.js" defer></script>
+    <script src="../js/cart.js" defer></script>
+    <script src="../js/main.js" defer></script>
+
+</body>
+
+</html>
